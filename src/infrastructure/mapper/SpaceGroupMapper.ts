@@ -6,7 +6,7 @@ export class SpaceGroupMapper {
         return {
             id: spaceEntity.id,
             day: spaceEntity.day,
-            plant: spaceEntity.plant,
+            floor: spaceEntity.floor,
             type: spaceEntity.type,
             spaces: spaceEntity.spaces,
             usedSpaces: spaceEntity.usedSpaces,
@@ -17,7 +17,7 @@ export class SpaceGroupMapper {
         return {
             id: space.id,
             day: space.day,
-            plant: space.plant,
+            floor: space.floor,
             type: space.type,
             spaces: space.spaces,
             usedSpaces: space.usedSpaces,

@@ -34,7 +34,7 @@ curl --location 'http://localhost:3000/space-group/find-all' \
 --header 'Content-Type: application/json' \
 --data '    {
         "type": ["CAR"],
-        "plant": [1,2]
+        "floor": [1,2]
     }'
 ```
 
@@ -44,21 +44,21 @@ curl --location 'http://localhost:3000/space-group' \
 --header 'Content-Type: application/json' \
 --data '[
   {
-    "plant": 1,
+    "floor": 1,
     "type": "MOTORBIKE",
     "day": "2025-06-10",
     "spaces": 10,
     "usedSpaces": 2
   },
   {
-    "plant": 2,
+    "floor": 2,
     "type": "CAR",
     "day": "2025-06-10",
     "spaces": 40,
     "usedSpaces": 24
   },
   {
-    "plant": 2,
+    "floor": 2,
     "type": "MOTORBIKE",
     "day": "2025-06-10",
     "spaces": 10,
@@ -74,7 +74,7 @@ curl --location --request PUT 'http://localhost:3000/space-group/74845e89-d1fe-4
 --data '    {
         "id": "74845e89-d1fe-4b42-94b7-871540225d59",
         "day": "2025-06-10",
-        "plant": 2,
+        "floor": 2,
         "type": "CAR",
         "spaces": 40,
         "usedSpaces": 24

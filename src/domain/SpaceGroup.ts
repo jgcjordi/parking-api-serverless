@@ -1,7 +1,7 @@
 export interface SpaceGroup {
   id?: string
   day: Date;
-  plant: number;
+  floor: number;
   type: string;
   spaces: number;
   usedSpaces: number
@@ -9,7 +9,7 @@ export interface SpaceGroup {
 
 export interface SpaceGroupFilter {
   id?: string[];
-  plant?: number[];
+  floor?: number[];
   type?: string[];
   day?: Date[];
   fromDate?: Date,

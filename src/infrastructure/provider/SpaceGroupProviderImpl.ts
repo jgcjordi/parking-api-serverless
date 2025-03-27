@@ -37,7 +37,7 @@ export class SpaceGroupProviderImpl implements SpaceGroupProvider {
         const whereConditions: Record<string, any> = {};
 
         if (filters.id && filters.id.length > 0) whereConditions.id = In(filters.id);
-        if (filters.plant && filters.plant.length > 0) whereConditions.plant = In(filters.plant);
+        if (filters.floor && filters.floor.length > 0) whereConditions.floor = In(filters.floor);
         if (filters.type && filters.type.length > 0) whereConditions.type = In(filters.type);
         if (filters.day && filters.day.length > 0) whereConditions.day = In(filters.day);
         if (filters.fromDate && filters.toDate) whereConditions.day = Between(filters.fromDate, filters.toDate);

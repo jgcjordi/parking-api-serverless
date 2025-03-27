@@ -10,7 +10,7 @@ export class SpaceGroupEntity implements SpaceGroup {
   day: Date;
 
   @Column({ type: "int", nullable: false })
-  plant: number;
+  floor: number;
 
   @Column({ type: "varchar", length: 255, nullable: false })
   type: string;
