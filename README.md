@@ -1,12 +1,16 @@
-# parking-api
+# parking-api-serverless
 
 API to manage parking spaces. The domain consists of a group of spaces, each assigned a type such as motorcycle or car. It includes the number of each type per floor and tracks occupied spaces.
+
+## Infrastructure
+
+Since it will be deployed as a Lambda function, it uses @codegenie/serverless-express to convert the microservice into a serverless function, while still running as a normal service locally.
+This approach keeps the microservice decoupled from the deployment infrastructure.
+At the same time on AWS uses an aurora DB that allows it to be totally serverless.
 
 ## Architecture
 
 This project follows a hexagonal architecture, using Express to expose a REST API and TypeORM to manage a PostgreSQL database.
-Since it will be deployed as a Lambda function, it uses @codegenie/serverless-express to convert the microservice into a serverless function, while still running as a normal service locally.
-This approach keeps the microservice decoupled from the deployment infrastructure.
 
 ## Setup
 
