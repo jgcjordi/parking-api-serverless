@@ -1,5 +1,5 @@
 {
-  "name": "parking",
+  "name": "parking-api",
   "version": "1.0.0",
   "description": "A serverless, hexagonal microservice providing a REST API with a database for parking control.",
   "main": "index.ts",
